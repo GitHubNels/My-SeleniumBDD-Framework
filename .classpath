@@ -16,12 +16,5 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="D:/Public/WorkBench/ISSC Tools - Jars/poi-3.16-beta1.jar"/>
-	<classpathentry kind="lib" path="D:/Public/WorkBench/ISSC Tools - Jars/poi-examples-3.16-beta1.jar"/>
-	<classpathentry kind="lib" path="D:/Public/WorkBench/ISSC Tools - Jars/poi-excelant-3.16-beta1.jar"/>
-	<classpathentry kind="lib" path="D:/Public/WorkBench/ISSC Tools - Jars/poi-ooxml-3.16-beta1.jar"/>
-	<classpathentry kind="lib" path="D:/Public/WorkBench/ISSC Tools - Jars/poi-ooxml-schemas-3.16-beta1.jar"/>
-	<classpathentry kind="lib" path="D:/Public/WorkBench/ISSC Tools - Jars/poi-scratchpad-3.16-beta1.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
