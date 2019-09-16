@@ -1,0 +1,609 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 27063073300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DriverManager.Setup()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "",
+        "description": "The search results page is populated when I use the search function",
+        "id": "test-rabobank.nl-search-functionality;;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2765285900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DriverManager.TearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 16039100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DriverManager.endTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 307958400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the Rabobank homepage",
+            "match": {
+              "location": "Steps_Homepage.onHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1380279100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I navigate to particulieren",
+            "match": {
+              "location": "Steps_Homepage.toParticulieren()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7291103300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I search for \"Rekening openen\" open",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Rekening openen",
+                  "offset": 14
+                }
+              ],
+              "location": "Steps_ParticulierenPage.searchFor(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 61872876700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "search results contain page with title \"Rekening openen\" open",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Rekening openen",
+                  "offset": 40
+                }
+              ],
+              "location": "Steps_ParticulierenPage.searchResultContains(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@SearchFilter"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 21811198900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DriverManager.Setup()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "I can filter the search results for \"Particulieren\" or \"Bedrijven\"",
+        "description": "",
+        "id": "test-rabobank.nl-search-functionality;i-can-filter-the-search-results-for-\"particulieren\"-or-\"bedrijven\";;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2786067300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DriverManager.TearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3428900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DriverManager.endTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 47999600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I am on the Rabobank homepage",
+            "match": {
+              "location": "Steps_Homepage.onHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1163176700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I navigate to particulieren",
+            "match": {
+              "location": "Steps_Homepage.toParticulieren()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7686969300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I search for \"Sparen\" open",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sparen",
+                  "offset": 14
+                }
+              ],
+              "location": "Steps_ParticulierenPage.searchFor(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23522309300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I select \"Sparen\" to filter the search results",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sparen",
+                  "offset": 10
+                }
+              ],
+              "location": "Steps_ParticulierenPage.filterSearchResultsByType(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 58368400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "search results contain page with title \"Sparen\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sparen",
+                  "offset": 40
+                }
+              ],
+              "location": "Steps_ParticulierenPage.search_results_contain_page_with_title(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@SearchFilter"
+          }
+        ]
+      }
+    ],
+    "name": "Test Rabobank.nl search functionality",
+    "description": "",
+    "id": "test-rabobank.nl-search-functionality",
+    "keyword": "Feature",
+    "uri": "1_SearchFunctionality.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 34844520500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DriverManager.Setup()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Customer type Particulieren User access ContactUs page",
+        "description": "",
+        "id": "test-rabobank.nl-contactus-page;customer-type-particulieren-user-access-contactus-page;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2773205400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DriverManager.TearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1351100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DriverManager.endTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 56249200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the Rabobank homepage",
+            "match": {
+              "location": "Steps_Homepage.onHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1252133100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I navigate to \"Particulieren\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Particulieren",
+                  "offset": 15
+                }
+              ],
+              "location": "Steps_ContactUsPage.i_navigate_to(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1816564000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I navigate to ContacUs page",
+            "match": {
+              "location": "Steps_ContactUsPage.i_navigate_to_ContacUs_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4153014200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Verify the ContactUs Page Details\"contact opnemen met de rabobank – particulieren\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "contact opnemen met de rabobank – particulieren",
+                  "offset": 34
+                }
+              ],
+              "location": "Steps_ContactUsPage.verify_the_ContactUs_Page_Details(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@ContactUS"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 31886119400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DriverManager.Setup()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Customer type Private Banking User access ContactUs page",
+        "description": "",
+        "id": "test-rabobank.nl-contactus-page;customer-type-private-banking-user-access-contactus-page;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2779752900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DriverManager.TearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1084400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DriverManager.endTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 44960000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I am on the Rabobank homepage",
+            "match": {
+              "location": "Steps_Homepage.onHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5423539400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I navigate to \"Private Banking\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Private Banking",
+                  "offset": 15
+                }
+              ],
+              "location": "Steps_ContactUsPage.i_navigate_to(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2383611900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I navigate to ContacUs page",
+            "match": {
+              "location": "Steps_ContactUsPage.i_navigate_to_ContacUs_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14965743900,
+              "error_message": "java.lang.AssertionError: expected [private banking - rabobank] but found [contact opnemen met de rabobank – particulieren]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:453)\r\n\tat org.testng.Assert.assertEquals(Assert.java:463)\r\n\tat com.qa.Pages.Methods_ContactUs.VerifyPage_Title(Methods_ContactUs.java:26)\r\n\tat com.qa.StepDefinitions.Steps_ContactUsPage.verify_the_ContactUs_Page_Details(Steps_ContactUsPage.java:33)\r\n\tat ✽.Then Verify the ContactUs Page Details\"Private Banking - Rabobank\"(2_ContactUs.feature:19)\r\n",
+              "status": "failed"
+            },
+            "line": 19,
+            "name": "Verify the ContactUs Page Details\"Private Banking - Rabobank\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Private Banking - Rabobank",
+                  "offset": 34
+                }
+              ],
+              "location": "Steps_ContactUsPage.verify_the_ContactUs_Page_Details(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 14,
+            "name": "@ContactUS"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 15425056200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DriverManager.Setup()"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "Customer type Bedrijven User access ContactUs page",
+        "description": "",
+        "id": "test-rabobank.nl-contactus-page;customer-type-bedrijven-user-access-contactus-page;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2763800300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DriverManager.TearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2290400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DriverManager.endTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 50397400,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I am on the Rabobank homepage",
+            "match": {
+              "location": "Steps_Homepage.onHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3290409300,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I navigate to \"Bedrijven\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Bedrijven",
+                  "offset": 15
+                }
+              ],
+              "location": "Steps_ContactUsPage.i_navigate_to(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1762137800,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I navigate to ContacUs page",
+            "match": {
+              "location": "Steps_ContactUsPage.i_navigate_to_ContacUs_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3704615700,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Verify the ContactUs Page Details\"contact – contactgegevens voor bedrijven - rabobank\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "contact – contactgegevens voor bedrijven - rabobank",
+                  "offset": 34
+                }
+              ],
+              "location": "Steps_ContactUsPage.verify_the_ContactUs_Page_Details(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 25,
+            "name": "@ContactUS"
+          }
+        ]
+      }
+    ],
+    "name": "Test Rabobank.nl ContactUs page",
+    "description": "",
+    "id": "test-rabobank.nl-contactus-page",
+    "keyword": "Feature",
+    "uri": "2_ContactUs.feature"
+  }
+]

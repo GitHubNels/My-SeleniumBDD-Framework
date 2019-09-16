@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 121.917 s <<< FAILURE! - in TestSuite
+feature(com.qa.Runner.TestRunner)  Time elapsed: 59.64 s  <<< FAILURE!
+cucumber.runtime.CucumberException: java.lang.AssertionError: expected [true] but found [Search results did not contain Rekening openen]
+	at com.qa.Runner.TestRunner.feature(TestRunner.java:31)
+Caused by: java.lang.AssertionError: expected [true] but found [Search results did not contain Rekening openen]
+
+feature(com.qa.Runner.TestRunner)  Time elapsed: 61.016 s  <<< FAILURE!
+cucumber.runtime.CucumberException: java.lang.AssertionError: expected [private banking - rabobank] but found [contact opnemen met de rabobank – particulieren]
+	at com.qa.Runner.TestRunner.feature(TestRunner.java:31)
+Caused by: java.lang.AssertionError: expected [private banking - rabobank] but found [contact opnemen met de rabobank – particulieren]
+
