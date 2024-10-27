@@ -1,4 +1,4 @@
-# Rabobank Transactions Intake Test
+
 
 1. Completely Re-organized the code with more visbility. 
 2. And enhanced the test maintenance which is more usable when code breaks in future.
